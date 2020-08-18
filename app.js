@@ -13,6 +13,14 @@ function calculator(param1, param2) {
     function subtract() {
         console.log(num1 - num2)
     }
+    function divide() {
+        console.log(num1 / num2)
+    }
+    function multiply() {
+        console.log(num1 * num2)
+    }
+
+
     inquirer.prompt([
         {
             name: "action",
@@ -36,15 +44,15 @@ function calculator(param1, param2) {
                     break;
 
                 case "divide":
-                    console.log("divide");
+                    divide()
                     break;
 
                 case "multiply":
-                    console.log("multiply");
+                    multiply()
                     break;
 
                 case "exit":
-                    console.log("exit");
+                    console.log("Exiting...")
                     break;
 
                 default:
@@ -53,4 +61,6 @@ function calculator(param1, param2) {
             }
         })
 }
+
+// Add in numbers here to be calculated
 calculator(10, 15)
