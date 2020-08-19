@@ -1,6 +1,4 @@
-
 const inquirer = require("inquirer");
-
 
 function calculator(param1, param2) {
 
@@ -56,11 +54,10 @@ function calculator(param1, param2) {
                     break;
 
                 default:
-                    console.log("default")
-                
+                    break;
             }
         })
 }
 
 // Add in numbers here to be calculated
-calculator(10, 15)
+calculator(10, 10)
